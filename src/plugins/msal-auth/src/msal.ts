@@ -45,13 +45,14 @@ export class Msal implements iMsal {
     // check if we are already logged in
     this.accountInfo = this.getAccount();
 
+    this.accessTokenRequest = { ...this.defaultAccessTokenRequest, ...options.accessTokenRequest };
+
     if (this.accountInfo) {
+      this.accessTokenRequest.account = this.accountInfo;
       this.acquireTokenSilent();
     } else if (options.framework.loginOnLoad) {
       this.signIn();
     }
-
-    this.accessTokenRequest = { ...this.defaultAccessTokenRequest, ...options.accessTokenRequest };
   }
 
   public data: AuthData = reactive({
