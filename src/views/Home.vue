@@ -4,7 +4,7 @@
     <HelloWorld :msg="message" />
   </div>
 
-  <button @click="login" v-if="this.msal.isAuthenticated()">Login</button>
+  <button @click="login" v-if="!this.msal.data.isAuthenticated">Login</button>
 </template>
 
 <script lang="ts">
