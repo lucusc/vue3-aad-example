@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@azure/msal-browser@^2.0.0-beta.4":
+"@azure/msal-browser@^2.0.0-beta.4", "@azure/msal-browser@^2.7.0":
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/@azure/msal-browser/-/msal-browser-2.7.0.tgz#4033731f8d9465e2cb731edb8c7082580360f38d"
   integrity sha512-mTswpOf1IbEu70fMaJFZyGUzsx1oIdKLPE/CBCuTN3mh9CmYE3r8P/D/R0y7TqZiUYPN7BsxIA6umLce2qKZpQ==
