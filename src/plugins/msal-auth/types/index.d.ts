@@ -13,10 +13,9 @@ export interface MsalOptions extends Configuration {
 
 export interface iMsal {
   data: AuthData;
-  signIn: () => Promise<any> | void;
-  signOut: () => Promise<any> | void;
-  acquireTokenSilent: () => Promise<string | void>;
-  isAuthenticated: () => boolean;
+  signIn: () => Promise<void>;
+  signOut: () => Promise<void>;
+  acquireTokenSilent: () => Promise<void>;
 }
 
 export type AuthData = {

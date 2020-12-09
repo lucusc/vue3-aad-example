@@ -148,8 +148,4 @@ export class Msal implements iMsal {
       }
     }
   }
-
-  isAuthenticated(): boolean {
-    return this.msalLibrary.getAllAccounts() !== null;
-  }
 }
